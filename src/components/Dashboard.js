@@ -7,7 +7,7 @@ function Dashboard() {
   // Fetch products from backend
   const fetchProducts = async () => {
     try {
-      const res = await fetch("ttps://render.com/docs/web-services#port-binding");
+      const res = await fetch("https://render.com/docs/web-services#port-binding");
       const data = await res.json();
       setProducts(data);
     } catch (error) {
